@@ -1,0 +1,139 @@
+// Place all the styles related to the portfolio controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+	margin: 0;
+	padding: 0;
+	
+	-webkit-font-smoothing: antialiased;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.portfolio-title{
+	position: relative;
+	top:50px;
+  text-align: center;
+}
+
+.portfolio-title h1{
+	font-size: 50px;
+  }
+
+.banner {
+	position: relative;
+	width: 100%;
+	overflow: auto;
+  top:100px;
+	
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	
+	color: rgba(255,255,255,.6);
+	text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
+	
+	background: white;
+	box-shadow: 0 1px 5px rgba(0,0,0,.5);
+}
+	
+.banner ul {
+		list-style: none;
+		width: 300%;
+}
+	
+.banner ul li {
+		display: block;
+		float: left;
+		width: 33%;
+		padding: 160px 0 210px;
+		
+		min-height: 350px;
+		
+/*		-webkit-background-size: 100% 100%;*/
+		-moz-background-size: 100% 100%;
+		-o-background-size: 100% 100%;
+		-ms-background-size: 100% 100%;
+/*		background-size: 100% 100%;*/
+		
+	box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
+}
+	
+.banner h1, .banner h2 {
+		font-size: 40px;
+		
+		color: #fff;
+}
+	
+.banner p {
+	font-family:Playfair;
+  padding:20px;
+  }
+
+
+.banner .btn, .banner .dot{
+background-color:#0B1A16;
+color:#D9D2CF;
+font-size:40px;
+opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.banner .btn:hover {
+	box-shadow: 3px 3px 5px #000000;
+  background-color:#1B2A26;
+}
+	
+	.banner .dots {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 20px;
+	}
+		
+  .banner .dots li {
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			margin: 0 4px;
+			
+			text-indent: -999em;
+			
+			border: 2px solid #fff;
+			border-radius: 6px;
+			
+			cursor: pointer;
+			opacity: .4;
+			
+			-webkit-transition: background .5s, opacity .5s;
+			-moz-transition: background .5s, opacity .5s;
+			transition: background .5s, opacity .5s;
+	}
+			
+  .banner .dots li.active {
+			background: #D9D2CF;
+			opacity: 1;
+	}
+ 
+	
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px), (max-width: 900px) {
+	
+	.banner h1, .banner h2 {
+		font-size: 50px;
+		line-height: 30px;
+	}
+	.banner ul li {
+		padding-top: 100px;
+		padding-bottom: 50px;
+		height: 240px;
+	}
+	.banner p {
+		font-size: 15px;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+}
