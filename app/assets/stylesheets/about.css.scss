@@ -1,0 +1,57 @@
+// Place all the styles related to the about controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.about-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(https://dl.dropboxusercontent.com/s/llao5whhs2figo8/manolisphoto.jpg) no-repeat;
+  background-position: center top;
+  background-size:cover;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  border-style: solid;
+    border-color: #495348;
+    border-width: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:60px;
+	}
+  
+  .about-text {
+  	text-align:justify;
+    	max-width: 600px;
+       margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 100px;
+    font-family: 'Playfair Display', serif;
+  font-size:15px;
+  margin-bottom: 50px;
+  overflow-y: auto;
+  overflow-x: hidden;
+    }
+    
+
+  
+  .cv-btn {
+max-width:300px;
+margin-left:auto;
+margin-right:auto;
+padding: 50px;
+}
+
+.cv-btn .btn{
+background-color:#0B1A16;
+color:#D9D2CF;
+font-size:20px;
+}
+    
+.cv-btn .btn:hover{
+background-color:#1B2A26;
+}
+    

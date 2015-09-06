@@ -1,0 +1,65 @@
+<div class="page-title"><h1>Portfolio</h1><h4>You can find more projects in my <a href="https://github.com/mankal111">github</a> page.</h4></div>
+<div class="banner">
+			<ul>
+				<li style="background-image: linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.8) 
+    ),url('https://dl.dropboxusercontent.com/s/m4eedajz8632yq7/box-screenshot.png'); background-size:cover;">        	
+          <a class="btn" href="https://boxmanolis.herokuapp.com/"><h1>Box</h1><h3>PHP, MySql, HTML, CSS, Javascript, JQuery</h3></a>
+          
+				
+				</li>
+				
+				<li style="background-image:linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.8)
+    ), url('https://dl.dropboxusercontent.com/s/01h1pww6lfm6ssn/shrimp-screenshot.png');">
+          <a class="btn" href="http://www.kongregate.com/games/Mankal111/shrimp-party"><h1>Shrimp Party</h1><h3>actionscript3</h3></a>
+				</li>
+				
+				<li style="background-image:linear-gradient(
+      rgba(0, 0, 0, 0.2), 
+      rgba(0, 0, 0, 0.8)
+    ), url('https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg');">
+          <a class="btn" href="https://github.com/mankal111/searchtex"><h1>Searchtex</h1><h3>Python</h3></a>
+				</li>
+			</ul>
+		</div>
+
+<script>
+  $(document).ready(function(){
+			if(window.chrome) {
+				$('.banner li').css('background-size', '100% 100%');
+			}
+			
+			$('.banner').unslider({
+				fluid: true,
+				dots: true,
+				speed: 500
+			});
+		
+			//  Find any element starting with a # in the URL
+			//  And listen to any click events it fires
+			$('a[href^="#"]').click(function() {
+				//  Find the target element
+				var target = $($(this).attr('href'));
+				
+				//  And get its position
+				var pos = target.offset(); // fallback to scrolling to top || {left: 0, top: 0};
+				
+				//  jQuery will return false if there's no element
+				//  and your code will throw errors if it tries to do .offset().left;
+				if(pos) {
+					//  Scroll the page
+					$('html, body').animate({
+						scrollTop: pos.top,
+						scrollLeft: pos.left
+					}, 1000);
+				}
+				
+				//  Don't let them visit the url, we'll scroll you there
+				return false;
+			});
+			
+			var GoSquared = {acct: 'GSN-396664-U'};});
+		</script>
